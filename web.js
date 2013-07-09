@@ -5,7 +5,7 @@ var fs = require('fs');
 
 app.get('/', function(request, response) {
 
-console.log(fs.readFileSync('./index.html', 'utf-8'));
+response.send(fs.readFileSync('./index.html', 'utf-8'));
 //  response.send('Hello World2!');
 });
 
